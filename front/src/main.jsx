@@ -6,21 +6,44 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import Home from "./page/Home.jsx";
+import Contact from "./page/Contact.jsx";
+import About from "./page/About.jsx";
+import Services from "./page/Services.jsx";
+import Blogs from "./page/Blogs.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <App/>,
         children: [
             {
-                path: '/'
-            }
+                path: '/',
+                element: <Home/>
+            },
+            {
+                path: '/about',
+                element: <About/>
+            },
+            {
+                path: '/services',
+                element: <Services/>
+            },
+            {
+                path: '/blogs',
+                element: <Blogs/>
+            },
+            {
+                path: '/contact',
+                element: <Contact/>
+            },
+
         ]
     },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-      <RouterProvider router={router} />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+    </React.StrictMode>,
 )
