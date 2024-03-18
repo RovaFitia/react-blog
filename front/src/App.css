@@ -54,6 +54,6 @@
     color: #fc3c1a;
 }
 
-.cat {
+.cat, .sidebar {
     border-bottom: 1px solid #ededed;
 }
