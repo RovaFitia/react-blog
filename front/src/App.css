@@ -49,3 +49,11 @@
     border-color: rgb(255, 106, 000);
     color: #fff;
 }
+
+.active-button {
+    color: #fc3c1a;
+}
+
+.cat {
+    border-bottom: 1px solid #ededed;
+}
