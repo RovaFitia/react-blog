@@ -1,8 +1,11 @@
 import React from 'react';
+import Banner from "../components/Banner.jsx";
 
 function About(props) {
     return (
-        <div>About</div>
+        <div>
+            <Banner title="About us" />
+        </div>
     );
 }
 
