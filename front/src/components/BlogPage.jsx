@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import BlogCards from "./BlogCards.jsx";
+import Pagination from "./Pagination.jsx";
 
 const BlogPage = () => {
     const [blogs, setBlogs] = useState([]) ;
@@ -51,7 +52,13 @@ const BlogPage = () => {
             </div>
 
             {/* Pagination section */}
-            <div></div>
+            <div>
+                <Pagination
+                    onPageChange={handlePageChange}
+                    blogs={blogs}
+                    currentPage={currentPage}
+                    pageSize={pageSize}/>
+            </div>
         </div>
     );
 };
