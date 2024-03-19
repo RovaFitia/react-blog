@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from "../components/Banner.jsx";
+import BlogPage from "../components/BlogPage.jsx";
 
 const Home = () => {
     const datas = {
@@ -9,6 +10,9 @@ const Home = () => {
     return (
         <div>
             <Banner title={datas.title} text={datas.text} link="/"/>
+            <div className="max-w-7xl mx-auto">
+                <BlogPage/>
+            </div>
         </div>
     );
 };
