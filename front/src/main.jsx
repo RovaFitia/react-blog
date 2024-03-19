@@ -39,9 +39,9 @@ const router = createBrowserRouter([
                 element: <Contact/>
             },
             {
-                path: '/blog/:id' ,
+                path: '/blogs/:id' ,
                 element: <SingleBlog/> ,
-                loader: ({paramas})=> fetch(`http://localhost:5000/blogs/${paramas.id}`)
+                loader: ({params})=> fetch(`http://localhost:5000/blogs/${params.id}`)
             }
         ]
     },
