@@ -11,7 +11,7 @@ const Pagination = ({onPageChange, blogs, currentPage, pageSize}) => {
         )) ;
     }
     return (
-        <ul className="pagination my-8 flex gap-4">
+        <ul className="pagination my-8 flex md:flex-row gap-4 flex-col">
             <li>
                 <button
                     onClick={() => onPageChange(currentPage - 1)}
@@ -21,7 +21,7 @@ const Pagination = ({onPageChange, blogs, currentPage, pageSize}) => {
                     Previous
                 </button>
             </li>
-            <div className="flex gap-1">{renderPaginationLinks()}</div>
+            <div className="flex gap-1 md:flex-row flex-wrap">{renderPaginationLinks()}</div>
             <li>
                 <button
                     onClick={() => onPageChange(currentPage + 1)}
